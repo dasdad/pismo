@@ -20,7 +20,7 @@ module Pismo
 
 
       # Words that we'd like to see in class and ID names for "content"
-      GOOD_WORDS = %w{content post blogpost main story body entry text desc asset hentry single entrytext postcontent bodycontent}.uniq
+      GOOD_WORDS = %w{content post blogpost main story body entry text desc asset hentry single entrytext postcontent bodycontent article}.uniq
 
       # Words that indicate crap in general
       BAD_WORDS = %w{reply metadata options commenting comments comment about footer header outer credit sidebar widget subscribe clearfix date social bookmarks links share video watch excerpt related supplement accessibility offscreen meta title signup blq secondary feedback featured clearfix small job jobs listing listings navigation nav byline addcomment postcomment trackback neighbor ads commentform fbfans login similar thumb link blogroll grid twitter wrapper container nav sitesub printfooter editsection visualclear catlinks hidden toc contentsub caption disqus rss shoutbox sponsor blogcomments}.uniq
@@ -77,7 +77,7 @@ module Pismo
 
         # Remove scripts manually, Sanitize and/or Nokogiri seem to go a bit funny with them
         @raw_content.gsub!(/\<script .*?\<\/script\>/im, '')
-        
+
         # Get rid of "smart" quotes and other Unicode nonsense
         @raw_content.force_encoding("ASCII-8BIT") if RUBY_VERSION > "1.9"
         @raw_content.gsub!("\xe2\x80\x89", " ")
