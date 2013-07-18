@@ -59,7 +59,7 @@ module Pismo
         twitter article via leave facebook fb like Log In or Join Read this }
       META_WORDS_PB = %w{janeiro fevereiro marco abril maio junho julho agosto
         setembro outubro novembro dezembro jan fev mar abr mai jun jul ago set
-        out nov dez comentarios escrito postado em as publicado
+        out nov dez comentarios escrito postado em as publicado Brasilia
         atualizado ultima artigo especial comentario registrar
         cadastrar saiba mais leia pagina proxima relacionado
         resposta contato rua telefone tel tags tagged tag obrigado
