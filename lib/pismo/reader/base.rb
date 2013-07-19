@@ -20,7 +20,7 @@ module Pismo
 
 
       # Words that we'd like to see in class and ID names for "content"
-      GOOD_WORDS_PB = %w{materia conteudo}
+      GOOD_WORDS_PB = %w{materia conteudo texto}
       GOOD_WORDS_DEFAULT = %w{content post blogpost main story body entry text
         desc asset hentry single entrytext postcontent bodycontent article}
       GOOD_WORDS = GOOD_WORDS_PB + GOOD_WORDS_DEFAULT
@@ -42,8 +42,8 @@ module Pismo
       FATAL_WORDS_DEFAULT = %w{termo comments comment bookmarks social links ads related
        similar footer digg totop metadata sitesub nav sidebar commenting options
         addcomment leaderboard offscreen job prevlink prevnext navigation
-        reply-link hide hidden sidebox archives vcard}
-      FATAL_WORDS_PB = %w{termo}
+        reply-link hide hidden sidebox archives vcard tabbable network}
+      FATAL_WORDS_PB = %w{termoi satellite}
       FATAL_WORDS = FATAL_WORDS_DEFAULT + FATAL_WORDS_PB
 
       META_WORDS_DEFAULT = %w{january february march april may june july august
@@ -60,7 +60,7 @@ module Pismo
       META_WORDS_PB = %w{janeiro fevereiro marco abril maio junho julho agosto
         setembro outubro novembro dezembro jan fev mar abr mai jun jul ago set
         out nov dez comentarios escrito postado em as publicado Brasilia
-        atualizado ultima artigo especial comentario registrar
+        atualizado ultima artigo especial comentario registrar (EFE) Paris
         cadastrar saiba mais leia pagina proxima relacionado
         resposta contato rua telefone tel tags tagged tag obrigado
         creditos credito amigo imprimir versao inscrever
