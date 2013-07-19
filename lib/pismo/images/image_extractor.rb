@@ -13,7 +13,6 @@ class ImageExtractor
 
   def initialize(document, url, options = {})
     @logger = options[:logger]
-    @logger = Logger.new(STDERR) if @logger.nil?
 
     @options = options
     bad_image_names = options[:bad_image_names] || %w"
@@ -33,7 +32,7 @@ class ImageExtractor
   def get_best_images(limit = 3)
     return unless @images.empty?
 
-    check_for_large_images(top_content_candidate, 0, 0)
+    check_for_large_images(@top_content_candidate, 0, 0)
 
     find_image_from_meta_tags if @images.empty?
 
