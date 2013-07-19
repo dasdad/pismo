@@ -11,7 +11,7 @@ module Pismo
 
         @doc.css(COULD_CONTAIN_FULL_CONTENT.join(", ")).each do |el|
           # Assume that no content we'll want comes in a total package of fewer than 80 characters!
-          next unless el.text.to_s.strip.length >= 80
+          next unless el.text.to_s.strip.length >= 50
 
           path_segments = el.path.scan(/[a-z]+/)[2..-1] || []
           depth = path_segments.length
@@ -146,6 +146,7 @@ module Pismo
       end
 
       def content_at(index)
+        return nil if @content_candidates[index].nil?
         @doc.at(@content_candidates[index].first)
       end
 
