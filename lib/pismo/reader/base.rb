@@ -43,7 +43,7 @@ module Pismo
        similar footer digg totop metadata sitesub nav sidebar commenting options
         addcomment leaderboard offscreen job prevlink prevnext navigation
         reply-link hide hidden sidebox archives vcard tabbable network}
-      FATAL_WORDS_PB = %w{termoi satellite}
+      FATAL_WORDS_PB = %w{termoi satellite banner shoppingUol}
       FATAL_WORDS = FATAL_WORDS_DEFAULT + FATAL_WORDS_PB
 
       META_WORDS_DEFAULT = %w{january february march april may june july august
