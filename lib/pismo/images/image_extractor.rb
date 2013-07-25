@@ -22,8 +22,8 @@ class ImageExtractor
     @images = []
     @doc =  Nokogiri::HTML(document.html, nil, 'utf-8')
     @url = url
-    @min_width = options[:min_width] || 100
-    @min_height = options[:min_height] || 100
+    @min_width = options[:min_width] || 300
+    @min_height = options[:min_height] || 200
     @top_content_candidate = document.reader_doc.content_at(0)
     @max_bytes = options[:max_bytes] || 15728640
     @min_bytes = options[:min_bytes] || 5000
